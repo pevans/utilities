@@ -1,0 +1,66 @@
+#!/usr/bin/osascript
+#
+# Resizing windows for a standalone laptop config -- we only
+# have 1440x900 to work with.
+#
+
+# desktop 2
+try
+tell application "Finder"
+	activate
+	set the bounds of the first window to {0, 0, 1050, 800}
+end tell
+end try
+
+try
+tell application "MacVim"
+	activate	
+	set the bounds of the first window to {600, 0, 1400, 800}
+end tell
+end try
+
+# desktop 3
+try
+tell application "Terminal"
+	activate
+	set the bounds of the first window to {0, 0, 1400, 800}
+end tell
+end try
+
+# desktop 1
+try
+tell application "GitHub"
+	activate
+	set the bounds of the first window to {0, 0, 800, 800}
+end tell
+end try
+
+# Hipchat is really weird; it seems the most finnicky of all
+# the apps here. But delaying plus addressing the window in this
+# manner seems to work the best of anything I've tried. (Plus, also,
+# using System Events.)
+try
+tell application "System Events" to tell process "HipChat"
+	activate
+	delay 0.5
+	tell window 1
+		set position to {0, 0}
+		set size to {1000, 800}
+	end tell
+end tell
+end try
+
+try
+tell application "Messages"
+	activate
+	set the bounds of the first window to {600, 200, 1400, 750}
+end tell
+end try
+
+# Resizing Chrome last, because we want that to have focus
+try
+tell application "Chrome"
+	activate
+	set the bounds of the first window to {0, 0, 1440, 800}
+end tell
+end try

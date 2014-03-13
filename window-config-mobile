@@ -15,7 +15,7 @@ end try
 try
 tell application "MacVim"
 	activate	
-	set the bounds of the first window to {600, 0, 1400, 800}
+	set the bounds of the first window to {500, 0, 1400, 800}
 end tell
 end try
 

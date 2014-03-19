@@ -1,6 +1,4 @@
-" Setting up vundle and pathogen
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+" Setting up pathogen
 execute pathogen#infect()
 
 " Use whatever source code font you prefer
@@ -52,3 +50,4 @@ map - :tabnext<CR>
 " And off we go.
 syntax on
 filetype plugin indent on
+

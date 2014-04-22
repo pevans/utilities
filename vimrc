@@ -5,7 +5,7 @@ execute pathogen#infect()
 set guifont=Inconsolata:h20
 
 " I'm assuming that solarized is installed
-colorscheme solarized
+colo solarized
 set background=dark
 
 " Default tab label is 'Filename (status)'
@@ -41,13 +41,16 @@ map ,fj :setl ft=javascript<CR>
 " We're assuming tabularize is installed
 map ,t= :Tabularize/=<CR>
 map ,t: :Tabularize/:<CR>
-map ,t=> :Tabularize/=><CR>
+map ,t> :Tabularize/=><CR>
+map ,t/ :Tabularize/\/\/<CR>
 
 " I wasn't really using these anyway
-map ` :tabprevious<CR>
-map - :tabnext<CR>
+map ` :tabp<CR>
+map - :tabn<CR>
+
+" Set up some auto behavior
+au FileType text,markdown setl tw=80
 
 " And off we go.
-syntax on
-filetype plugin indent on
-
+syn on
+filet plugin indent on

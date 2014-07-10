@@ -2,7 +2,8 @@
 execute pathogen#infect()
 
 " Use whatever source code font you prefer
-set guifont=Inconsolata:h20
+"set guifont=Inconsolata:h24
+set guifont=M+\ 1m\ light:h24
 
 " I'm assuming that solarized is installed
 colo solarized
@@ -32,6 +33,7 @@ map <F2> :let @/ = ""<CR>
 " Quick filetype sets, for times when you want to open
 " a new buffer but not necessarily save it to a file.
 map ,ft :setl ft=text<CR>
+map ,fm :setl ft=markdown<CR>
 map ,fs :setl ft=sql<CR>
 map ,fp :setl ft=php<CR>
 map ,fh :setl ft=html<CR>
@@ -43,6 +45,7 @@ map ,t= :Tabularize/=<CR>
 map ,t: :Tabularize/:<CR>
 map ,t> :Tabularize/=><CR>
 map ,t/ :Tabularize/\/\/<CR>
+map ,t, :Tabularize/,<CR>
 
 " I wasn't really using these anyway
 map ` :tabp<CR>

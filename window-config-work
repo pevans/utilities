@@ -32,7 +32,7 @@ end try
 try
 tell application "GitHub"
 	activate
-	set the bounds of the first window to {0, 0, 950, 940}
+	set the bounds of the first window to {0, 0, 1550, 940}
 end tell
 end try
 

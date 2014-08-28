@@ -15,7 +15,7 @@ end try
 try
 tell application "MacVim"
 	activate	
-	set the bounds of the first window to {300, 0, 1400, 800}
+	set the bounds of the first window to {300, 0, 1440, 800}
 end tell
 end try
 
@@ -23,17 +23,17 @@ end try
 try
 tell application "Terminal"
 	activate
-	set the bounds of the first window to {0, 0, 1400, 800}
+	set the bounds of the first window to {0, 0, 1440, 800}
 end tell
 end try
 
 # desktop 1
-try
-tell application "GitHub"
-	activate
-	set the bounds of the first window to {0, 0, 800, 800}
-end tell
-end try
+#try
+#tell application "GitHub"
+#	activate
+#	set the bounds of the first window to {0, 0, 800, 800}
+#end tell
+#end try
 
 # Hipchat is really weird; it seems the most finnicky of all
 # the apps here. But delaying plus addressing the window in this

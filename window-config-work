@@ -24,17 +24,17 @@ end try
 try
 tell application "Terminal"
 	activate
-	set the bounds of the first window to {0, 0, 2550, 1330}
+	set the bounds of the first window to {0, 0, 2560, 1330}
 end tell
 end try
 
 # desktop 1
-try
-tell application "GitHub"
-	activate
-	set the bounds of the first window to {0, 0, 1550, 940}
-end tell
-end try
+#try
+#tell application "GitHub"
+#	activate
+#	set the bounds of the first window to {0, 0, 1550, 940}
+#end tell
+#end try
 
 # Hipchat is really weird; it seems the most finnicky of all
 # the apps here. This code seems to work the "best" of any
@@ -60,6 +60,6 @@ end try
 try
 tell application "Chrome"
 	activate
-	set the bounds of the first window to {960, 0, 2550, 1330}
+	set the bounds of the first window to {0, 0, 2560, 1330}
 end tell
 end try

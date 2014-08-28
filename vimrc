@@ -27,6 +27,10 @@ set tabstop=4
 map ,rc :e ~/.vimrc<CR>
 map ,so :so ~/.vimrc<CR>
 
+" Look for the next chunk of a conflict. Bonus: once you use ,nc, you can
+" just hit 'n' to repeat the search.
+map ,nc /<<<<<<\\|======\\|>>>>>><CR>
+
 " Clear out any past search term
 map <F2> :let @/ = ""<CR>
 

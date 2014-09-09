@@ -28,19 +28,8 @@ end tell
 end try
 
 # desktop 1
-#try
-#tell application "GitHub"
-#	activate
-#	set the bounds of the first window to {0, 0, 800, 800}
-#end tell
-#end try
-
-# Hipchat is really weird; it seems the most finnicky of all
-# the apps here. But delaying plus addressing the window in this
-# manner seems to work the best of anything I've tried. (Plus, also,
-# using System Events.)
 try
-tell application "System Events" to tell process "HipChat"
+tell application "System Events" to tell process "Flowdock"
 	activate
 	delay 0.5
 	tell window 1

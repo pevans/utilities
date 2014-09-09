@@ -28,23 +28,12 @@ tell application "Terminal"
 end tell
 end try
 
-# desktop 1
-#try
-#tell application "GitHub"
-#	activate
-#	set the bounds of the first window to {0, 0, 1550, 940}
-#end tell
-#end try
-
-# Hipchat is really weird; it seems the most finnicky of all
-# the apps here. This code seems to work the "best" of any
-# method I've tried, and even then, it only sometimes works.
 try
-tell application "System Events" to tell process "HipChat"
+tell application "System Events" to tell process "Flowdock"
 	activate
 	tell window 1
 		set position to {2570, 0}
-		set size to {1100, 800}
+		set size to {1300, 800}
 	end tell
 end tell
 end try

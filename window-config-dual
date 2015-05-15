@@ -1,0 +1,61 @@
+#!/usr/bin/osascript
+#
+# Resizing windows for a typical "work" configuration, which assumes a
+# 2560x1440 thunderbolt display on the left and an open laptop (1440x900) on
+# the right.
+#
+
+# desktop 2
+try
+tell application "Finder"
+	activate
+	set the bounds of the first window to {0, 0, 1050, 1330}
+end tell
+end try
+
+try
+tell application "MacVim"
+	activate	
+	set the bounds of the first window to {1060, 0, 2550, 1330}
+end tell
+end try
+
+# desktop 3
+try
+tell application "Terminal"
+	activate
+	set the bounds of the first window to {0, 0, 2560, 1330}
+end tell
+end try
+
+try
+tell application "System Events" to tell process "Slack"
+        activate
+        tell window 1
+                set position to {2560, 0}
+                set size to {2500, 1360}
+        end tell
+end tell
+end try
+
+try
+tell application "Slack"
+	activate
+	set the bounds of the first window to {2560, 0, 5000, 1400}
+end tell
+end try
+
+try
+tell application "Messages"
+	activate
+	set the bounds of the first window to {4120, 700, 5120, 1440}
+end tell
+end try
+
+# Resizing Chrome last, because we want that to have focus
+try
+tell application "Chrome"
+	activate
+	set the bounds of the first window to {0, 0, 2560, 1330}
+end tell
+end try

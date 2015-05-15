@@ -29,7 +29,7 @@ end tell
 end try
 
 try
-tell application "System Events" to tell process "Flowdock"
+tell application "System Events" to tell process "Slack"
 	activate
 	tell window 1
 		set position to {2570, 0}

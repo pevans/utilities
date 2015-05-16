@@ -29,7 +29,7 @@ end try
 
 # desktop 1
 try
-tell application "System Events" to tell process "Flowdock"
+tell application "System Events" to tell process "Slack"
 	activate
 	delay 0.5
 	tell window 1

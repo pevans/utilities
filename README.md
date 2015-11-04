@@ -20,6 +20,6 @@ If you were curious how to configure something fancy in Vim -- well, the vimrc f
 Here are a few things I use with my vim setup:
 
 * [Pathogen](https://github.com/tpope/vim-pathogen), which is fairly essential to any custom vim setup.
-* [Inconsolata](http://levien.com/type/myfonts/inconsolata.html), my current code font of choice. (There's also a version hosted at [Google](http://www.google.com/fonts/specimen/Inconsolata) which supports bold type.)
+* [M+](http://mplus-fonts.osdn.jp/), my current code font of choice.
 * [Solarized](https://github.com/altercation/vim-colors-solarized), which is the best color scheme I've yet used for editing source code.
 * [Tabularize](https://github.com/godlygeek/tabular), a handy plugin for aligning code based on a delimiter. For example, you can line up variable assignments, object properties in javascript...

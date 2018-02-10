@@ -33,7 +33,7 @@ tell application "System Events" to tell process "Slack"
 	activate
 	tell window 1
 		set position to {2570, 0}
-		set size to {1300, 800}
+		set size to {1200, 700}
 	end tell
 end tell
 end try
@@ -41,7 +41,7 @@ end try
 try
 tell application "Messages"
 	activate
-	set the bounds of the first window to {3000, 200, 3990, 890}
+	set the bounds of the first window to {2700, 200, 3820, 780}
 end tell
 end try
 

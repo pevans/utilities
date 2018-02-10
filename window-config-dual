@@ -33,22 +33,19 @@ tell application "System Events" to tell process "Slack"
         activate
         tell window 1
                 set position to {2560, 0}
-                set size to {2500, 1360}
+                set size to {2560, 1360}
         end tell
 end tell
 end try
 
 try
-tell application "Slack"
+tell application "System Events" to tell process "Messages"
 	activate
-	set the bounds of the first window to {2560, 0, 5000, 1400}
-end tell
-end try
-
-try
-tell application "Messages"
-	activate
-	set the bounds of the first window to {4120, 700, 5120, 1440}
+	tell window 1
+		set position to {4000, 440}
+		set size to {1000, 800}
+	end tell
+	#set the bounds of the first window to {200, 100, 100, 100}
 end tell
 end try
 
